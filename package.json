@@ -3,13 +3,18 @@
   "description": "Commitlint configuration for the project",
   "version": "0.0.0",
   "devDependencies": {
+    "@commitlint/cli": "20.5.0",
     "@commitlint/config-conventional": "20.5.0",
     "@commitlint/config-pnpm-scopes": "20.4.3",
-    "@commitlint/types": "20.5.0"
+    "@commitlint/types": "20.5.0",
+    "lefthook": "2.1.4"
   },
   "exports": {
     "./*": "./src/config/*.ts"
   },
   "private": true,
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "prepare": "lefthook install"
+  }
 }
